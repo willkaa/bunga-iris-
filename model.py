@@ -17,7 +17,7 @@ y = iris_df[['Species' ]]
 
 # split data into train and test sets
 # 70% training and 30% test
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=seed, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=seed, stratify=y)
 
 # create an instance of the random forest classifier
 clf = RandomForestClassifier(n_estimators=100)
@@ -33,4 +33,5 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy}") # Accuracy: 0.91
 
 #save the model to disk
+
 joblib.dump(clf, "rf_model.sav")
