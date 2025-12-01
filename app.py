@@ -29,5 +29,6 @@ if st.button("Predict type of Iris"):
 
 st.text('')
 st.text('')
-st.markdown("Test")
+st.markdown("William Eka Saputra_00000112825_Guided Week 13")
+
 
